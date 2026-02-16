@@ -29,6 +29,7 @@ function YapDetailContent() {
   const {
     state: recordingState,
     streamingText,
+    audioLevel,
     startRecording,
     stopRecording,
   } = useRealtimeTranscription({
@@ -169,7 +170,7 @@ function YapDetailContent() {
 
       {/* Recording UI */}
       {recordingState === "recording" || recordingState === "stopping" ? (
-        <HoldToStopBar onStop={handleStop} />
+        <HoldToStopBar onStop={handleStop} audioLevel={audioLevel} />
       ) : (
         <RecordFAB
           onClick={handleRecord}

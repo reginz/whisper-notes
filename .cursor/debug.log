@@ -405,3 +405,393 @@
 {"location":"hook:201","message":"Transcription completed","data":{"transcript":"Instead of on top of each other?"},"hypothesisId":"H5","timestamp":1771077392322}
 {"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":86016,"minRequired":2400,"totalChunks":94},"hypothesisId":"H2","timestamp":1771077395419}
 {"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":94},"hypothesisId":"H3","timestamp":1771077396601}
+{"location":"hook:95","message":"Mic stream acquired","data":{"micSampleRate":48000,"micDeviceId":"524C617D1A4F7C42B8AC9AE4B8477A44B34F4100"},"hypothesisId":"H1","timestamp":1771079255440}
+{"location":"hook:113","message":"AudioContext created","data":{"actualSampleRate":24000,"requestedSampleRate":24000,"state":"suspended"},"hypothesisId":"H1","timestamp":1771079256457}
+{"location":"hook:170","message":"WS event received","data":{"type":"session.created","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079256458}
+{"location":"hook:175","message":"Session config from API","data":{"sessionType":"transcription","transcriptionModel":"gpt-4o-transcribe","fullSession":"{\"type\":\"transcription\",\"object\":\"realtime.transcription_session\",\"id\":\"sess_D9AuMcjpJi58b0ekn9A0D\",\"expires_at\":1771082856,\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"transcription\":{\"model\":\"gpt-4o-transcribe\",\"language\":\"en\",\"prompt\":null},\"noise_reduction\":null,\"turn_detection\":{\"type\":\"server_vad\",\"threshold\":0.5,\"prefix_padding_ms\":300,\"silence_duration_ms\":500}}},\"include\":null}"},"hypothesisId":"H6","timestamp":1771079256458}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":1,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.02131635695695877,"nonZeroSamples":666,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079256639}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":2,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.001362974988296628,"nonZeroSamples":44,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079256810}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":3,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.0069633666425943375,"nonZeroSamples":711,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079256980}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079257338}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079259552}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079259557}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079259558}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079259558}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079259737}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079260064}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Testing","fullTranscript":"Testing"},"hypothesisId":"H5","timestamp":1771079260065}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079260069}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" testing","fullTranscript":"Testing testing"},"hypothesisId":"H5","timestamp":1771079260070}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079260079}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"Testing testing."},"hypothesisId":"H5","timestamp":1771079260080}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079260100}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Testing testing."},"hypothesisId":"H5","timestamp":1771079260100}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079262455}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079262456}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079262456}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079262456}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262726}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Does","fullTranscript":"Does"},"hypothesisId":"H5","timestamp":1771079262727}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262757}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" the","fullTranscript":"Does the"},"hypothesisId":"H5","timestamp":1771079262758}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262758}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" waves","fullTranscript":"Does the waves"},"hypothesisId":"H5","timestamp":1771079262758}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262763}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" with","fullTranscript":"Does the waves move with"},"hypothesisId":"H5","timestamp":1771079262763}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262765}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262762}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" my","fullTranscript":"Does the waves move with my"},"hypothesisId":"H5","timestamp":1771079262766}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" move","fullTranscript":"Does the waves move"},"hypothesisId":"H5","timestamp":1771079262763}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262771}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" voice","fullTranscript":"Does the waves move with my voice"},"hypothesisId":"H5","timestamp":1771079262771}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079262785}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"Does the waves move with my voice?"},"hypothesisId":"H5","timestamp":1771079262786}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079262792}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Does the waves move with my voice?"},"hypothesisId":"H5","timestamp":1771079262793}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":50,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.0026699937880039215,"nonZeroSamples":125,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079265001}
+{"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":90112,"minRequired":2400,"totalChunks":57},"hypothesisId":"H2","timestamp":1771079266303}
+{"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":57},"hypothesisId":"H3","timestamp":1771079267471}
+{"location":"hook:95","message":"Mic stream acquired","data":{"micSampleRate":48000,"micDeviceId":"524C617D1A4F7C42B8AC9AE4B8477A44B34F4100"},"hypothesisId":"H1","timestamp":1771079299716}
+{"location":"hook:113","message":"AudioContext created","data":{"actualSampleRate":24000,"requestedSampleRate":24000,"state":"suspended"},"hypothesisId":"H1","timestamp":1771079300981}
+{"location":"hook:170","message":"WS event received","data":{"type":"session.created","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079300989}
+{"location":"hook:175","message":"Session config from API","data":{"sessionType":"transcription","transcriptionModel":"gpt-4o-transcribe","fullSession":"{\"type\":\"transcription\",\"object\":\"realtime.transcription_session\",\"id\":\"sess_D9Av5Uwr4t5hg54lqaNK6\",\"expires_at\":1771082900,\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"transcription\":{\"model\":\"gpt-4o-transcribe\",\"language\":\"en\",\"prompt\":null},\"noise_reduction\":null,\"turn_detection\":{\"type\":\"server_vad\",\"threshold\":0.5,\"prefix_padding_ms\":300,\"silence_duration_ms\":500}}},\"include\":null}"},"hypothesisId":"H6","timestamp":1771079300989}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":1,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.07293331623077393,"nonZeroSamples":1115,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079301163}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":2,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.007399853318929672,"nonZeroSamples":1402,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079301332}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":3,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.023564333096146584,"nonZeroSamples":993,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079301503}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079302374}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079306465}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079306466}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079306467}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079306469}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079306979}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Testing","fullTranscript":"Testing"},"hypothesisId":"H5","timestamp":1771079306979}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079306983}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" testing","fullTranscript":"Testing testing"},"hypothesisId":"H5","timestamp":1771079306983}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079306992}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":",","fullTranscript":"Testing testing,"},"hypothesisId":"H5","timestamp":1771079306992}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307000}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" how","fullTranscript":"Testing testing, how"},"hypothesisId":"H5","timestamp":1771079307001}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307007}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" does","fullTranscript":"Testing testing, how does"},"hypothesisId":"H5","timestamp":1771079307007}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307015}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" the","fullTranscript":"Testing testing, how does the"},"hypothesisId":"H5","timestamp":1771079307015}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307028}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" new","fullTranscript":"Testing testing, how does the new"},"hypothesisId":"H5","timestamp":1771079307028}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307032}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" multiplier","fullTranscript":"Testing testing, how does the new multiplier"},"hypothesisId":"H5","timestamp":1771079307032}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307040}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" work","fullTranscript":"Testing testing, how does the new multiplier work"},"hypothesisId":"H5","timestamp":1771079307040}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079307048}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"Testing testing, how does the new multiplier work?"},"hypothesisId":"H5","timestamp":1771079307048}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079307141}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Testing testing, how does the new multiplier work?"},"hypothesisId":"H5","timestamp":1771079307142}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079307826}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079308343}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079308343}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079308344}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079308344}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079308577}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"."},"hypothesisId":"H5","timestamp":1771079308578}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079308591}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"."},"hypothesisId":"H5","timestamp":1771079308592}
+{"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":12288,"minRequired":2400,"totalChunks":46},"hypothesisId":"H2","timestamp":1771079308974}
+{"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":46},"hypothesisId":"H3","timestamp":1771079310145}
+{"location":"hook:95","message":"Mic stream acquired","data":{"micSampleRate":48000,"micDeviceId":"524C617D1A4F7C42B8AC9AE4B8477A44B34F4100"},"hypothesisId":"H1","timestamp":1771079422445}
+{"location":"hook:113","message":"AudioContext created","data":{"actualSampleRate":24000,"requestedSampleRate":24000,"state":"suspended"},"hypothesisId":"H1","timestamp":1771079423192}
+{"location":"hook:170","message":"WS event received","data":{"type":"session.created","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079423192}
+{"location":"hook:175","message":"Session config from API","data":{"sessionType":"transcription","transcriptionModel":"gpt-4o-transcribe","fullSession":"{\"type\":\"transcription\",\"object\":\"realtime.transcription_session\",\"id\":\"sess_D9Ax4h0aFWRA7SNU99486\",\"expires_at\":1771083023,\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"transcription\":{\"model\":\"gpt-4o-transcribe\",\"language\":\"en\",\"prompt\":null},\"noise_reduction\":null,\"turn_detection\":{\"type\":\"server_vad\",\"threshold\":0.3,\"prefix_padding_ms\":150,\"silence_duration_ms\":200}}},\"include\":null}"},"hypothesisId":"H6","timestamp":1771079423192}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":1,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0,"nonZeroSamples":0,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079423372}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":2,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.0014724819920957088,"nonZeroSamples":22,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079423543}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":3,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.037473760545253754,"nonZeroSamples":909,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079423714}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079424810}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079428363}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079428363}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079428364}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079428364}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428642}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Okay","fullTranscript":"Okay"},"hypothesisId":"H5","timestamp":1771079428642}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428643}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":",","fullTranscript":"Okay,"},"hypothesisId":"H5","timestamp":1771079428643}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428643}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" is","fullTranscript":"Okay, is"},"hypothesisId":"H5","timestamp":1771079428643}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428650}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" it","fullTranscript":"Okay, is it"},"hypothesisId":"H5","timestamp":1771079428650}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428656}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" gonna","fullTranscript":"Okay, is it gonna"},"hypothesisId":"H5","timestamp":1771079428657}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428665}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" be","fullTranscript":"Okay, is it gonna be"},"hypothesisId":"H5","timestamp":1771079428666}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428674}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" faster","fullTranscript":"Okay, is it gonna be faster"},"hypothesisId":"H5","timestamp":1771079428674}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428681}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" this","fullTranscript":"Okay, is it gonna be faster this"},"hypothesisId":"H5","timestamp":1771079428681}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428690}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" time","fullTranscript":"Okay, is it gonna be faster this time"},"hypothesisId":"H5","timestamp":1771079428690}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079428695}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"Okay, is it gonna be faster this time?"},"hypothesisId":"H5","timestamp":1771079428695}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079428807}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Okay, is it gonna be faster this time?"},"hypothesisId":"H5","timestamp":1771079428808}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079428852}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079430390}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079430391}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079430391}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079430392}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079430581}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Milliseconds","fullTranscript":"Milliseconds"},"hypothesisId":"H5","timestamp":1771079430582}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079430588}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" of","fullTranscript":"Milliseconds of"},"hypothesisId":"H5","timestamp":1771079430589}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079430592}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" wait","fullTranscript":"Milliseconds of wait"},"hypothesisId":"H5","timestamp":1771079430592}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079430604}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"Milliseconds of wait."},"hypothesisId":"H5","timestamp":1771079430605}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079430624}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Milliseconds of wait."},"hypothesisId":"H5","timestamp":1771079430624}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079430730}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079431589}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079431589}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079431590}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079431590}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":50,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.02960614301264286,"nonZeroSamples":946,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079431735}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079431741}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"m","fullTranscript":"m"},"hypothesisId":"H5","timestamp":1771079431741}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079431750}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"m"},"hypothesisId":"H5","timestamp":1771079431751}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079432104}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079433635}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079433636}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079433636}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079433637}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079433847}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"After","fullTranscript":"After"},"hypothesisId":"H5","timestamp":1771079433848}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079433858}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" trans","fullTranscript":"After trans"},"hypothesisId":"H5","timestamp":1771079433858}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079433864}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"cripción","fullTranscript":"After transcripción"},"hypothesisId":"H5","timestamp":1771079433864}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079433879}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"After transcripción."},"hypothesisId":"H5","timestamp":1771079433879}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079433892}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"After transcripción."},"hypothesisId":"H5","timestamp":1771079433892}
+{"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":114688,"minRequired":2400,"totalChunks":89},"hypothesisId":"H2","timestamp":1771079438487}
+{"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":89},"hypothesisId":"H3","timestamp":1771079439670}
+{"location":"hook:95","message":"Mic stream acquired","data":{"micSampleRate":48000,"micDeviceId":"524C617D1A4F7C42B8AC9AE4B8477A44B34F4100"},"hypothesisId":"H1","timestamp":1771079557654}
+{"location":"hook:113","message":"AudioContext created","data":{"actualSampleRate":24000,"requestedSampleRate":24000,"state":"suspended"},"hypothesisId":"H1","timestamp":1771079558593}
+{"location":"hook:170","message":"WS event received","data":{"type":"session.created","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079558606}
+{"location":"hook:175","message":"Session config from API","data":{"sessionType":"transcription","transcriptionModel":"gpt-4o-transcribe","fullSession":"{\"type\":\"transcription\",\"object\":\"realtime.transcription_session\",\"id\":\"sess_D9AzFO9gn2bywBjFZPTUt\",\"expires_at\":1771083158,\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"transcription\":{\"model\":\"gpt-4o-transcribe\",\"language\":\"en\",\"prompt\":null},\"noise_reduction\":null,\"turn_detection\":{\"type\":\"server_vad\",\"threshold\":0.3,\"prefix_padding_ms\":150,\"silence_duration_ms\":200}}},\"include\":null}"},"hypothesisId":"H6","timestamp":1771079558606}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":1,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.005744326859712601,"nonZeroSamples":151,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079558780}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":2,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.008700322359800339,"nonZeroSamples":731,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079558950}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":3,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.008724438026547432,"nonZeroSamples":648,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079559121}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079559814}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079560672}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079560672}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079560673}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079560673}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079560932}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Okay","fullTranscript":"Okay"},"hypothesisId":"H5","timestamp":1771079560933}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079560934}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"Okay."},"hypothesisId":"H5","timestamp":1771079560934}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079560951}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Okay."},"hypothesisId":"H5","timestamp":1771079560952}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079562198}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079564429}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079564430}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079564430}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079564430}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564587}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"How","fullTranscript":"How"},"hypothesisId":"H5","timestamp":1771079564588}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564594}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" does","fullTranscript":"How does"},"hypothesisId":"H5","timestamp":1771079564594}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564594}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" the","fullTranscript":"How does the"},"hypothesisId":"H5","timestamp":1771079564594}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564605}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" text","fullTranscript":"How does the text"},"hypothesisId":"H5","timestamp":1771079564606}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564611}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" color","fullTranscript":"How does the text color"},"hypothesisId":"H5","timestamp":1771079564612}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564621}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" look","fullTranscript":"How does the text color look"},"hypothesisId":"H5","timestamp":1771079564622}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564624}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" right","fullTranscript":"How does the text color look right"},"hypothesisId":"H5","timestamp":1771079564624}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564631}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" now","fullTranscript":"How does the text color look right now"},"hypothesisId":"H5","timestamp":1771079564631}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079564643}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"How does the text color look right now?"},"hypothesisId":"H5","timestamp":1771079564643}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079564654}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"How does the text color look right now?"},"hypothesisId":"H5","timestamp":1771079564654}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":50,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.0013183783739805222,"nonZeroSamples":39,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079567143}
+{"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":77824,"minRequired":2400,"totalChunks":53},"hypothesisId":"H2","timestamp":1771079567806}
+{"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":53},"hypothesisId":"H3","timestamp":1771079568972}
+{"location":"hook:95","message":"Mic stream acquired","data":{"micSampleRate":48000,"micDeviceId":"524C617D1A4F7C42B8AC9AE4B8477A44B34F4100"},"hypothesisId":"H1","timestamp":1771079615050}
+{"location":"hook:113","message":"AudioContext created","data":{"actualSampleRate":24000,"requestedSampleRate":24000,"state":"suspended"},"hypothesisId":"H1","timestamp":1771079616047}
+{"location":"hook:170","message":"WS event received","data":{"type":"session.created","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079616048}
+{"location":"hook:175","message":"Session config from API","data":{"sessionType":"transcription","transcriptionModel":"gpt-4o-transcribe","fullSession":"{\"type\":\"transcription\",\"object\":\"realtime.transcription_session\",\"id\":\"sess_D9B0AGPBp6g7sOXjyiygS\",\"expires_at\":1771083216,\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"transcription\":{\"model\":\"gpt-4o-transcribe\",\"language\":\"en\",\"prompt\":null},\"noise_reduction\":null,\"turn_detection\":{\"type\":\"server_vad\",\"threshold\":0.3,\"prefix_padding_ms\":150,\"silence_duration_ms\":200}}},\"include\":null}"},"hypothesisId":"H6","timestamp":1771079616048}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":1,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.0083994809538126,"nonZeroSamples":2396,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079616230}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":2,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.007634441368281841,"nonZeroSamples":2690,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079616400}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":3,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.008405087515711784,"nonZeroSamples":3015,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079616571}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079617089}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079620676}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079620680}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079620680}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079620677}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621154}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Let's","fullTranscript":"Let's"},"hypothesisId":"H5","timestamp":1771079621155}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621155}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" try","fullTranscript":"Let's try"},"hypothesisId":"H5","timestamp":1771079621156}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" this","fullTranscript":"Let's try this"},"hypothesisId":"H5","timestamp":1771079621163}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621162}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621167}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" time","fullTranscript":"Let's try this time"},"hypothesisId":"H5","timestamp":1771079621167}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621174}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":",","fullTranscript":"Let's try this time,"},"hypothesisId":"H5","timestamp":1771079621175}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621182}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" does","fullTranscript":"Let's try this time, does"},"hypothesisId":"H5","timestamp":1771079621182}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621197}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" the","fullTranscript":"Let's try this time, does the"},"hypothesisId":"H5","timestamp":1771079621197}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621203}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" height","fullTranscript":"Let's try this time, does the height"},"hypothesisId":"H5","timestamp":1771079621203}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621207}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" get","fullTranscript":"Let's try this time, does the height get"},"hypothesisId":"H5","timestamp":1771079621207}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621212}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" fixed","fullTranscript":"Let's try this time, does the height get fixed"},"hypothesisId":"H5","timestamp":1771079621212}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079621309}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"Let's try this time, does the height get fixed?"},"hypothesisId":"H5","timestamp":1771079621310}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079621310}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Let's try this time, does the height get fixed?"},"hypothesisId":"H5","timestamp":1771079621311}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":50,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.009695081040263176,"nonZeroSamples":3183,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079624592}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079626989}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079627679}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079627679}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079627680}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079627680}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079627895}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"What's","fullTranscript":"What's"},"hypothesisId":"H5","timestamp":1771079627895}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079627908}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" happening","fullTranscript":"What's happening"},"hypothesisId":"H5","timestamp":1771079627908}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079627909}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"What's happening?"},"hypothesisId":"H5","timestamp":1771079627909}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079627926}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"What's happening?"},"hypothesisId":"H5","timestamp":1771079627926}
+{"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":57344,"minRequired":2400,"totalChunks":82},"hypothesisId":"H2","timestamp":1771079630169}
+{"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":82},"hypothesisId":"H3","timestamp":1771079631334}
+{"location":"hook:95","message":"Mic stream acquired","data":{"micSampleRate":48000,"micDeviceId":"524C617D1A4F7C42B8AC9AE4B8477A44B34F4100"},"hypothesisId":"H1","timestamp":1771079704036}
+{"location":"hook:113","message":"AudioContext created","data":{"actualSampleRate":24000,"requestedSampleRate":24000,"state":"suspended"},"hypothesisId":"H1","timestamp":1771079704869}
+{"location":"hook:170","message":"WS event received","data":{"type":"session.created","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079704870}
+{"location":"hook:175","message":"Session config from API","data":{"sessionType":"transcription","transcriptionModel":"gpt-4o-transcribe","fullSession":"{\"type\":\"transcription\",\"object\":\"realtime.transcription_session\",\"id\":\"sess_D9B1bUJz5VHwGiibr3NoX\",\"expires_at\":1771083304,\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"transcription\":{\"model\":\"gpt-4o-transcribe\",\"language\":\"en\",\"prompt\":null},\"noise_reduction\":null,\"turn_detection\":{\"type\":\"server_vad\",\"threshold\":0.3,\"prefix_padding_ms\":150,\"silence_duration_ms\":200}}},\"include\":null}"},"hypothesisId":"H6","timestamp":1771079704870}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":1,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.005737193860113621,"nonZeroSamples":709,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079705049}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":2,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.009526870213449001,"nonZeroSamples":2998,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079705219}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":3,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.03686268627643585,"nonZeroSamples":3147,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079705390}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079705734}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079708469}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079708470}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079708470}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079708471}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708811}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Hey","fullTranscript":"Hey"},"hypothesisId":"H5","timestamp":1771079708812}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708818}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":",","fullTranscript":"Hey,"},"hypothesisId":"H5","timestamp":1771079708819}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708830}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" so","fullTranscript":"Hey, so"},"hypothesisId":"H5","timestamp":1771079708830}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708840}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" let's","fullTranscript":"Hey, so let's"},"hypothesisId":"H5","timestamp":1771079708840}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708852}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" test","fullTranscript":"Hey, so let's test"},"hypothesisId":"H5","timestamp":1771079708853}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708853}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" the","fullTranscript":"Hey, so let's test the"},"hypothesisId":"H5","timestamp":1771079708853}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708864}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" new","fullTranscript":"Hey, so let's test the new"},"hypothesisId":"H5","timestamp":1771079708865}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708869}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" animation","fullTranscript":"Hey, so let's test the new animation"},"hypothesisId":"H5","timestamp":1771079708869}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079708877}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"Hey, so let's test the new animation."},"hypothesisId":"H5","timestamp":1771079708877}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079708902}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Hey, so let's test the new animation."},"hypothesisId":"H5","timestamp":1771079708903}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079710512}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079713255}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079713256}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079713257}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079713257}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":50,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.03785480931401253,"nonZeroSamples":2999,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079713411}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079714437}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079714486}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"Why","fullTranscript":"Why"},"hypothesisId":"H5","timestamp":1771079714487}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079714487}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" does","fullTranscript":"Why does"},"hypothesisId":"H5","timestamp":1771079714488}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079714494}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" this","fullTranscript":"Why does this"},"hypothesisId":"H5","timestamp":1771079714495}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079714504}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" happen","fullTranscript":"Why does this happen"},"hypothesisId":"H5","timestamp":1771079714504}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079714509}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"?","fullTranscript":"Why does this happen?"},"hypothesisId":"H5","timestamp":1771079714510}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079714528}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"Why does this happen?"},"hypothesisId":"H5","timestamp":1771079714528}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079717861}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079717861}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079717862}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079717862}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718029}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"I","fullTranscript":"I"},"hypothesisId":"H5","timestamp":1771079718030}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718030}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" don't","fullTranscript":"I don't"},"hypothesisId":"H5","timestamp":1771079718030}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718041}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" understand","fullTranscript":"I don't understand"},"hypothesisId":"H5","timestamp":1771079718042}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718052}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":",","fullTranscript":"I don't understand,"},"hypothesisId":"H5","timestamp":1771079718053}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718053}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" I","fullTranscript":"I don't understand, I"},"hypothesisId":"H5","timestamp":1771079718053}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718063}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" don't","fullTranscript":"I don't understand, I don't"},"hypothesisId":"H5","timestamp":1771079718063}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718068}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" see","fullTranscript":"I don't understand, I don't see"},"hypothesisId":"H5","timestamp":1771079718069}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718077}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" an","fullTranscript":"I don't understand, I don't see an"},"hypothesisId":"H5","timestamp":1771079718078}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718085}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" animation","fullTranscript":"I don't understand, I don't see an animation"},"hypothesisId":"H5","timestamp":1771079718085}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079718089}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"I don't understand, I don't see an animation."},"hypothesisId":"H5","timestamp":1771079718089}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079718183}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"I don't understand, I don't see an animation."},"hypothesisId":"H5","timestamp":1771079718184}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079719558}
+{"location":"hook:130","message":"Audio chunk","data":{"chunkNum":100,"bufferLength":4096,"sampleRate":24000,"maxAmplitude":0.3429603576660156,"nonZeroSamples":4058,"totalSamples":4096,"base64SampleLength":0},"hypothesisId":"H2","timestamp":1771079721944}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079723826}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079723826}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079723827}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079723827}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724308}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"It","fullTranscript":"It"},"hypothesisId":"H5","timestamp":1771079724309}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724309}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" still","fullTranscript":"It still"},"hypothesisId":"H5","timestamp":1771079724310}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724319}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" looks","fullTranscript":"It still looks"},"hypothesisId":"H5","timestamp":1771079724319}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724349}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" glitch","fullTranscript":"It still looks glitch"},"hypothesisId":"H5","timestamp":1771079724349}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724349}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"y","fullTranscript":"It still looks glitchy"},"hypothesisId":"H5","timestamp":1771079724349}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724350}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" and","fullTranscript":"It still looks glitchy and"},"hypothesisId":"H5","timestamp":1771079724350}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724363}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" the","fullTranscript":"It still looks glitchy and the"},"hypothesisId":"H5","timestamp":1771079724363}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724363}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" height","fullTranscript":"It still looks glitchy and the height"},"hypothesisId":"H5","timestamp":1771079724364}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724371}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":" changes","fullTranscript":"It still looks glitchy and the height changes"},"hypothesisId":"H5","timestamp":1771079724371}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079724379}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"It still looks glitchy and the height changes."},"hypothesisId":"H5","timestamp":1771079724379}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079724461}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"It still looks glitchy and the height changes."},"hypothesisId":"H5","timestamp":1771079724462}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079725372}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079725706}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079725706}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079725707}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079725707}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079725954}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":"The","fullTranscript":"The"},"hypothesisId":"H5","timestamp":1771079725954}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079725955}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"The"},"hypothesisId":"H5","timestamp":1771079725955}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_started","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079726215}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.speech_stopped","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079726898}
+{"location":"hook:170","message":"WS event received","data":{"type":"input_audio_buffer.committed","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079726899}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.added","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079726900}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.done","hasTranscript":false,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079726900}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.delta","hasTranscript":false,"hasDelta":true},"hypothesisId":"H3","timestamp":1771079727139}
+{"location":"hook:190","message":"Transcription delta received","data":{"delta":".","fullTranscript":"."},"hypothesisId":"H5","timestamp":1771079727140}
+{"location":"hook:170","message":"WS event received","data":{"type":"conversation.item.input_audio_transcription.completed","hasTranscript":true,"hasDelta":false},"hypothesisId":"H3","timestamp":1771079727145}
+{"location":"hook:201","message":"Transcription completed","data":{"transcript":"."},"hypothesisId":"H5","timestamp":1771079727145}
+{"location":"hook:254","message":"Stop recording called","data":{"pendingSamples":45056,"minRequired":2400,"totalChunks":140},"hypothesisId":"H2","timestamp":1771079728824}
+{"location":"hook:233","message":"WebSocket closed","data":{"code":1005,"reason":"","totalChunksSent":140},"hypothesisId":"H3","timestamp":1771079729991}

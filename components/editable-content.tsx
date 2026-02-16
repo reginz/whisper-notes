@@ -18,44 +18,48 @@ export function EditableContent({
 }: EditableContentProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Auto-resize textarea
-  const adjustHeight = useCallback(() => {
-    const textarea = textareaRef.current;
-    if (!textarea) return;
-    textarea.style.height = "auto";
-    textarea.style.height = `${textarea.scrollHeight}px`;
-  }, []);
-
+  // Auto-resize textarea using scrollHeight
   useEffect(() => {
-    adjustHeight();
-  }, [content, adjustHeight]);
+    const textarea = textareaRef.current;
+    if (!textarea || isRecording) return;
+    textarea.style.height = "0";
+    textarea.style.height = `${textarea.scrollHeight}px`;
+  }, [content, isRecording]);
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       onChange(e.target.value);
-      adjustHeight();
     },
-    [onChange, adjustHeight]
+    [onChange]
   );
 
   return (
-    <div className="min-h-[200px] px-4 py-4">
-      <div className="relative">
+    <div className="min-h-[200px] px-4 py-4 text-[16px] leading-relaxed">
+      {isRecording ? (
+        /* Single flow div during recording — no height jumps */
+        <div className="whitespace-pre-wrap break-words text-foreground">
+          {content}
+          {streamingText && (
+            <>
+              {content ? "\n" : ""}
+              <StreamingText text={streamingText} />
+            </>
+          )}
+          {!content && !streamingText && (
+            <span className="text-text-secondary">Listening...</span>
+          )}
+        </div>
+      ) : (
+        /* Editable textarea when not recording */
         <textarea
           ref={textareaRef}
           value={content}
           onChange={handleChange}
-          readOnly={isRecording}
-          placeholder={isRecording ? "" : "Start typing or tap the mic..."}
-          className="w-full resize-none bg-transparent text-[16px] leading-relaxed text-foreground placeholder-text-secondary outline-none"
+          placeholder="Start typing or tap the mic..."
+          className="w-full resize-none overflow-hidden bg-transparent text-[16px] leading-relaxed text-foreground placeholder-text-secondary outline-none"
           rows={1}
         />
-        {isRecording && streamingText && (
-          <div className="mt-1 text-[16px] leading-relaxed">
-            <StreamingText text={streamingText} />
-          </div>
-        )}
-      </div>
+      )}
     </div>
   );
 }

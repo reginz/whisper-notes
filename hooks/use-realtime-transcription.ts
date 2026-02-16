@@ -27,6 +27,7 @@ export function useRealtimeTranscription(
 ) {
   const [state, setState] = useState<TranscriptionState>("idle");
   const [streamingText, setStreamingText] = useState("");
+  const [audioLevel, setAudioLevel] = useState(0);
 
   const wsRef = useRef<WebSocket | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
@@ -134,6 +135,16 @@ export function useRealtimeTranscription(
 
           const inputData = e.inputBuffer.getChannelData(0);
           audioChunkCountRef.current++;
+
+          // Compute RMS audio level (0-1) for visualisation
+          let sumSquares = 0;
+          for (let i = 0; i < inputData.length; i++) {
+            sumSquares += inputData[i] * inputData[i];
+          }
+          const rms = Math.sqrt(sumSquares / inputData.length);
+          // Amplify and clamp to 0-1 (phone mic RMS is often 0.002-0.05)
+          const level = Math.min(1, rms * 35);
+          setAudioLevel(level);
 
           // #region agent log
           if (audioChunkCountRef.current <= 3 || audioChunkCountRef.current % 50 === 0) {
@@ -346,6 +357,7 @@ export function useRealtimeTranscription(
   return {
     state,
     streamingText,
+    audioLevel,
     startRecording,
     stopRecording,
   };
